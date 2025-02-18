@@ -1,0 +1,68 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div .nav-products-h1 {
+    display: inline;
+}
+
+.carousel-item img {
+    height: 700px;
+}
+
+.navbar {
+    background-color: blue;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: rgb(22, 22, 94);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-products .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #afaeae;
+}
+
+.section-title {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sobre-o-restaurante, #products {
+    background-color: #afaeae;
+}
+
+.text-colored {
+    color: blue;
+}
+
+.nav-products .nav-link.active,
+#fale-conosco button {
+    background-color: blue;
+    color: #fff;
+}
+
+.nav-products .nav-link:hover {
+    color: blue;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}

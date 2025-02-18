@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Tecnologia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">T e c h n o l o g y</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link p-1 m-1" href="#about">
+                            <i class="bi bi-braces me-1"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link p-1 m-1" href="#products">
+                            <i class="bi bi-box-fill me-1"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link p-1 m-1" href="#contact-us">
+                            <i class="bi bi-chat-fill"></i>
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./images/slide (1).jpg" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./images/slide (2).jpg" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./images/slide (3).jpg" alt="Uma mesa com comidas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/about/about-image.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title fw-bold" id="about">About <span class="text-colored fw-bold">us</span></h2>
+                            <p class="fs-4">
+                                <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i> Sunt officia id incidunt ipsam veritatis debitis delectus facilis ipsa vitae earum vero deserunt, neque ipsum error voluptatibus perspiciatis excepturi impedit illum.
+                                Lorem ipsum, dolor sit <span class="fw-bold">amet consectetur adipisicing elit. Quod amet eum quam ducimus, nostrum voluptatum sed nihil nisi atque veritatis dolores soluta reiciendis deserunt, suscipit quos facere dolore a modi.</span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione quaerat est molestias excepturi numquam aliquam, autem nisi! Aspernatur repellat ad enim pariatur quas facere minima, <span class="fw-bold">nisi omnis illum quia.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row"> 
+                    <h2 class="section-title text-center mb-5 fw-bold">Our <span class="text-colored fw-bold">products</span></h2>
+                </div>
+                <div class="row">
+                    <div class="nav-products-h1 p-5 fs-4">
+                        <nav class="nav nav-pills nav-products">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#computers" class="fw-bold text-start nav-link text-colored active">Computers</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#notebooks" class="fw-bold text-start nav-link text-colored">Notebooks</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#tablets" class="fw-bold text-start nav-link text-colored">Tablets</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#phones" class="fw-bold text-start nav-link text-colored">Phones</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessories" class="fw-bold text-start nav-link text-colored">Acessories</button>
+                        </nav>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="computers">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/desktop1.webp" alt="Gaming-PC">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Computer</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/desktop2.webp" alt="Gaming-PC">
+                                        <h5 class="text-colored fw-bold">Gaming Computer</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/desktop1.webp" alt="Gaming-PC">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Computer</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/desktop2.webp" alt="Gaming-PC">
+                                        <h5 class="text-colored fw-bold">Gaming Computer</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/desktop1.webp" alt="Gaming-PC">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Computer</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/desktop2.webp" alt="Gaming-PC">
+                                        <h5 class="text-colored fw-bold">Gaming Computer</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="notebooks">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook1.webp" alt="Notebook">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Notebook</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook2.webp" alt="Notebook">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Notebook</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook1.webp" alt="Notebook">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Notebook</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook2.webp" alt="Notebook">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Notebook</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook1.webp" alt="Notebook">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Notebook</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook2.webp" alt="Notebook">
+                                        <h5 class="text-colored fw-bold mt-2">Gaming Notebook</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tablets">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/notebook1.webp" alt="Tablet">
+                                        <h5 class="text-colored fw-bold mt-2">Tablet</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/Tablet2.webp" alt="Tablet">
+                                        <h5 class="text-colored fw-bold mt-2">Tablet</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/Tablet1.webp" alt="Tablet">
+                                        <h5 class="text-colored fw-bold mt-2">Tablet</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/Tablet2.webp" alt="Tablet">
+                                        <h5 class="text-colored fw-bold mt-2">Tablet</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/Tablet1.webp" alt="Tablet">
+                                        <h5 class="text-colored fw-bold mt-2">Tablet</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/products-img/Tablet2.webp" alt="Tablet">
+                                        <h5 class="text-colored fw-bold mt-2">Tablet</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                        <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                        <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="tab-pane" id="phones">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="images/products-img/Phone1.webp" alt="Phone">
+                                            <h5 class="text-colored fw-bold mt-2">Phone</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                            <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                            <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="images/products-img/Phone2.webp" alt="Phone">
+                                            <h5 class="text-colored fw-bold mt-2">Phone</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                            <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                            <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="images/products-img/Phone1.webp" alt="Phone">
+                                            <h5 class="text-colored fw-bold mt-2">Phone</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                            <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                            <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="images/products-img/Phone2.webp" alt="Phone">
+                                            <h5 class="text-colored fw-bold mt-2">Phone</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                            <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                            <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="images/products-img/Phone1.webp" alt="Phone">
+                                            <h5 class="text-colored fw-bold mt-2">Phone</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                            <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                            <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="images/products-img/Phone2.webp" alt="Phone">
+                                            <h5 class="text-colored fw-bold mt-2">Phone</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                            <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                            <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                                        </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="acessories">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/products-img/Acessories1.webp" alt="Acessories">
+                                <h5 class="text-colored fw-bold mt-2">Acessories</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/products-img/Acessories2.webp" alt="Acessories">
+                                <h5 class="text-colored fw-bold mt-2">Acessories</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/products-img/Acessories1.webp" alt="Acessories">
+                                <h5 class="text-colored fw-bold mt-2">Acessories</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/products-img/Acessories2.webp" alt="Acessories">
+                                <h5 class="text-colored fw-bold mt-2">Acessories</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/products-img/Acessories1.webp" alt="Acessories">
+                                <h5 class="text-colored fw-bold mt-2">Acessories</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/products-img/Acessories2.webp" alt="Acessories">
+                                <h5 class="text-colored fw-bold mt-2">Acessories</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button type="button" class="rounded mb-3 mt-3 bg-primary">Buy Now</button>
+                                <button type="button" class="rounded mb-3 mt-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center" id="contact-us">Contact <span class="text-colored">us</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Name</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                                <input type="email" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Phone Number (optional)</label>
+                                <input type="tel" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Your message.</label>
+                                <textarea class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Social Media
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Adress
+                            </h3>
+                            <p>
+                                Rua Teste, Exemplo n° 145, Bairro Bootstrap - Brasília / DF
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
